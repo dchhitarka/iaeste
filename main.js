@@ -1,3 +1,4 @@
+/*
 window.addEventListener('mousewheel', (e)=>{
   if (e.orioriginalEvent.wheelDelta >= 0) {
     console.log('Scroll up');
@@ -14,3 +15,4 @@ const h = window.innerHeight;
 if (w <= 900px){
     // let about = document.getElementBy
 }
+*/

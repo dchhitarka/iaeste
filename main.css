@@ -99,14 +99,14 @@ html, body{
   color: blue;
   text-align: center;
   margin: 30px auto;
-
 }
 .head::after{
   content: '';
   position: absolute;
-  bottom: 15%;
-  left: 43%;
-  width: 75px;
+  bottom: 12%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  width: 25%;
   height: 2px;
   background-color: orange;
 }
@@ -114,7 +114,7 @@ html, body{
   font-size: 25px;
   line-height: 40px;
   word-spacing: 10px;
-  margin: 25px auto;
+  margin: 7% 15%;
 }
 .content span{
   color: blue;
@@ -137,17 +137,12 @@ html, body{
 }
 .item{
   text-align: center;
-  /* margin: 10px auto; */
   padding: 15px;
 }
-/* .item .icon{
-  display: block;
-} */
+
 .item h5{
   color: white;
-  /* margin-left: 18%; */
   text-transform: uppercase;
-
 }
 .item p{
   padding-left: 15%;
@@ -174,19 +169,21 @@ html, body{
     z-index: 5;
     color: white;
   }
-  .navbar-toggler-icon{
+  .head::after{
+    /* right: 15%; */
   }
   .home{
     height: 120vh;
   }
   .home h1{
-    top: 50%;
+    top: 60%;
+    margin: 10px auto;
     font-size: 25px;
     text-align: center;
   }
   .link{
-    top: 60%;
-    margin-top: 25px;
+    top: 63%;
+    margin-top: 45px;
   }
   .link li{
     margin-top: 30px;
@@ -198,11 +195,20 @@ html, body{
     grid-template-columns: auto;
     /* grid-template-rows: auto auto auto auto; */
   }
+  .head{
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 440px){
+  .home h1{
+    margin: 15px auto;
+  }
   .home .link{
     flex-flow: column;
-    top: 65%;
+    top: 80%;
+  }
+  .link li{
+    margin-top: 5px;
   }
 }
