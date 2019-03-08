@@ -1,18 +1,11 @@
-/*
-window.addEventListener('mousewheel', (e)=>{
-  if (e.orioriginalEvent.wheelDelta >= 0) {
-    console.log('Scroll up');
-}
-else {
-    console.log('Scroll down');
-}
+let arrow = document.getElementById('arrow');
+window.addEventListener('scroll', ()=>{
+  let h1 = window.pageYOffset;
+  const h2 = document.querySelector('.us').scrollHeight;
+  if (h1 >= h2){
+    arrow.classList.remove('none');
+  }
+  else{
+    arrow.classList.add('none');
+  }
 });
-let up = document.querySelector('.up')
-let scroll = up.offsetTop;
-
-const w = window.innerWidth;
-const h = window.innerHeight;
-if (w <= 900px){
-    // let about = document.getElementBy
-}
-*/
